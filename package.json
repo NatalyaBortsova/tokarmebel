@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "homepage": "https://natalyabortsova.github.io/tokarmebel/",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d app",
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
     "build": "gulp build",
