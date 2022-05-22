@@ -1,0 +1,83 @@
+.buildings {
+
+  background-color: var(--bg-accent);
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    max-width: 370px;
+    background-color: var(--light-color);
+  }
+
+  &__image {
+    border-radius: 0px 36px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 13px;
+
+    @include big-desktop {
+      font-size: calc(24px + (30 - 24) * ((100vw - 320px) / (1200 - 320)));
+
+    }
+  }
+
+  &__content {
+    padding: 36px 29px 40px 40px;
+
+    @include mobile {
+      padding: 28px 24px 30px 20px;
+    }
+  }
+
+  &__item-list {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+
+    @include mobile {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &__item-row {
+    position: relative;
+    padding-left: 17px;
+
+    &::before {
+      @include pseudo;
+      @include bg-cover;
+
+      width: 5px;
+      height: 10px;
+      left: 0;
+      top: 7px;
+      background-image: url('../../img/chevron-right.svg');
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

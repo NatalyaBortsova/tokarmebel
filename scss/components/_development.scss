@@ -1,0 +1,150 @@
+.development {
+  &__char {
+    padding: 40px 50px 50px 60px;
+  }
+
+  &__section {
+    padding-bottom: 145px;
+
+    @include big-desktop {
+      padding-bottom: calc(60px + (145 - 60) * ((100vw - 320px) / (1200 - 320)));
+    }
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 31px;
+
+    @include big-desktop {
+      margin-bottom: calc(12px + (31 - 12) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+  }
+
+  &__image {
+    & picture .image {
+      border-radius: 0px 40px;
+
+      @include mobile {
+        min-height: 160px;
+      }
+    }
+
+    &--gap {
+      margin-bottom: 10px;
+
+      @include minmobile {
+        margin: 0 40px 0 0;
+
+        @include big-desktop {
+          margin-right: calc(15px + (40 - 15) * ((100vw - 576px) / (1200 - 576)));
+        }
+      }
+    }
+  }
+
+  &__items {
+
+    @include minmobile {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__item {
+
+    &--gap {
+      margin-right: 40px;
+
+      @include big-desktop {
+        margin-right: calc(15px + (40 - 15) * ((100vw - 576px) / (1200 - 576)));
+      }
+
+      @include mobile {
+        margin: 0 0 50px 0;
+      }
+    }
+
+  }
+
+
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.development-order {
+  background: #FFFBF7;
+  border-radius: 0px 40px 0px 0px;
+  margin-bottom: 145px;
+
+  @include big-desktop {
+    margin-bottom: calc(60px + (145 - 60) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  @include minsmall-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include small-tablet {
+    max-width: 420px;
+    margin: 0 auto 64px;
+    
+  }
+
+  .order-consultation {
+    padding: 58px 60px 68px 80px;
+
+    @include big-desktop {
+      padding-top: calc(41px + (58 - 41) * ((100vw - 320px) / (1200 - 320)));
+      padding-right: calc(20px + (60 - 20) * ((100vw - 320px) / (1200 - 320)));
+      padding-bottom: calc(28px + (68 - 28) * ((100vw - 320px) / (1200 - 320)));
+      padding-left: calc(20px + (80 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    @include mintablet {
+      flex: 1 0 605px;
+    }
+  }
+
+  .order-consultation__input {
+    max-width: 390px;
+
+    @include tablet {
+      margin-bottom: 10px;
+    }
+  }
+
+  .order-consultation__button {
+    max-width: 200px;
+
+    @include tablet {
+      max-width: 390px;
+    }
+  }
+
+  .order-consultation__form {
+    margin-bottom: 31px;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+}

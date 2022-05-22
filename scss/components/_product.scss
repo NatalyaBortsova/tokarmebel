@@ -1,0 +1,106 @@
+.product {
+  margin-bottom: 30px;
+
+  &__list {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    column-gap: 6px;
+    row-gap: 30px;
+
+    @include medium-tablet {
+      justify-content: start;
+    }
+  }
+
+  &__item {
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+    max-width: 270px;
+  }
+
+
+  &__card {
+    transition: transform 0.5s ease-in-out;
+    width: 270px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__inner {
+    padding: 26px 23px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    border-radius: 0px 36px;
+  }
+
+  &__title {
+    @include line-clamp(2);
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    height: 52px;
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__footage {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    padding-left: 38px;
+
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+
+    &--meter {
+      background-image: url('../../img/dwelling/footage-1.svg');
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      background-position: left;
+    }
+
+    &--sqmeter {
+      background-image: url('../../img/dwelling/footage-2.svg');
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      background-position: left;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  &__link {
+    display: block;
+
+    max-width: 112px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 13px 14px;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
