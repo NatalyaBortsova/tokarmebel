@@ -1,0 +1,216 @@
+.work-process {
+
+  &__inner {
+    @include mintablet {
+      display: flex;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+
+      @include big-desktop {
+        margin-bottom: calc(40px + (60 - 40) * ((100vw - 320px) / (1200 - 320)));
+      }
+    }
+
+  }
+
+  &__stage {
+    max-width: 266px;
+    width: 100%;
+    margin-bottom: 16px;
+
+    @include mintablet {
+      margin: 0 34px 0 0;
+    }
+
+  }
+
+  &__title {
+    position: relative;
+    display: block;
+    text-align: left;
+    max-width: 240px;
+    width: 100%;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--light-color);
+    padding: 16px 17px 14px;
+    margin-bottom: 20px;
+
+    &::after {
+      @include pseudo;
+      right: -26px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 0 30px 26px;
+      border-color: transparent transparent transparent #cb8734;
+
+      @include mobile {
+        border: none;
+        width: 15px;
+        height: 11px;
+        right: 12px;
+        top: 25px;
+        background-image: url('../../img/stage/chevron-white.svg');
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include tablet {
+      margin-bottom: 16px;
+    }
+
+    @include mobile {
+      max-width: 300px;
+    }
+
+    &.active {
+      +.work-process__subtitle {
+        display: block;
+      }
+    }
+
+  }
+
+  &__subtitle {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    transition: display 0.3s ease-in-out;
+
+    @include mobile {
+      display: none;
+    }
+
+    &.active {
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+    background-color: var(--light-color);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 114px 51px 36px 28px;
+    background-repeat: no-repeat;
+
+    &::before {
+      @include pseudo;
+
+      width: 62px;
+      height: 62px;
+      top: 28px;
+      left: 28px;
+    }
+
+    @include big-desktop {
+      padding-top: calc(100px + (114 - 100) * ((100vw - 320px) / (1200 - 320)));
+      padding-right: calc(26px + (51 - 26) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    @include tablet {
+      margin-bottom: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+    }
+
+    &--meeting {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage1-1.svg');
+      }
+    }
+
+    &--consultation {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage1-2.svg');
+      }
+    }
+
+    &--details {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage1-3.svg');
+      }
+    }
+
+    &--design {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage2-1.svg');
+      }
+    }
+
+    &--contract {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage2-2.svg');
+      }
+    }
+
+    &--payment {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage2-3.svg');
+      }
+    }
+
+    &--foundation {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage3-1.svg');
+      }
+    }
+
+    &--delivery {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage3-2.svg');
+      }
+    }
+
+    &--projectdelivery {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/stage/stage3-3.svg');
+      }
+    }
+  }
+
+}

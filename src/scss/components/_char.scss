@@ -1,0 +1,189 @@
+.char {
+
+  &__inner {
+    @include minsmall-tablet {
+      display: flex;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    @include minsmall-tablet {
+      margin: 0 27px 0 0;
+      max-width: 413px;
+      flex: 1 1 0;
+    }
+
+    @include small-tablet {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__footage {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 40px 0;
+
+    @include big-desktop {
+      font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1200 - 320)));
+      padding-top: calc(18px + (40 - 18) * ((100vw - 320px) / (1200 - 320)));
+      padding-bottom: calc(18px + (40 - 18) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    @include minsmall-tablet {
+      border-top: 1px solid #E7D8C7;
+    }
+
+    &:last-child {
+      @include minsmall-tablet {
+        border-bottom: 1px solid #E7D8C7;
+      }
+    }
+
+    &:not(:last-child) {
+      @include small-tablet {
+        margin-right: 15px;
+      }
+    }
+
+    &-image {
+      margin-right: 25px;
+
+      @include big-desktop {
+        margin-right: calc(13px + (25 - 13) * ((100vw - 320px) / (1200 - 320)));
+      }
+
+      @include mobile {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1 1 0;
+  }
+
+  &__block {
+
+    @include minmobile {
+      display: flex;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 18px;
+
+    @include minmobile {
+      margin: 0 30px 0 0;
+    }
+
+    & picture .image {
+      border-radius: 0px 36px;
+
+      @include mobile {
+        min-width: 240px;
+        min-height: 160px;
+      }
+    }
+  }
+
+  &__box {
+    @include mobile {
+      margin-bottom: 23px;
+    }
+
+    &-title {
+      display: block;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 12px;
+
+      @include big-desktop {
+        font-size: calc(24px + (30 - 24) * ((100vw - 320px) / (1200 - 320)));
+        margin-bottom: calc(9px + (12 - 9) * ((100vw - 320px) / (1200 - 320)));
+      }
+    }
+
+    &-item {
+      position: relative;
+      display: block;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      padding-left: 41px;
+
+      &::before {
+        @include pseudo;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &--technology {
+        &::before {
+          background-image: url('../../img/card/technology.svg');
+        }
+      }
+
+      &--terms {
+        &::before {
+          background-image: url('../../img/card/terms.svg');
+        }
+      }
+
+      &--highlight {
+        font-weight: 700;
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+
+          @include big-desktop {
+            margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (1200 - 320)));
+          }
+        }
+      }
+    }
+  }
+
+  &__stage {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    column-count: 2;
+
+    @include big-desktop {
+      font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+    &-item {
+      position: relative;
+      line-height: 2.6;
+      padding-left: 17px;
+
+      &::before {
+        @include pseudo;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 5px;
+        height: 10px;
+        left: 0;
+        top: 17px;
+        background-image: url(../../img/chevron-right.svg);
+      }
+    }
+  }
+}

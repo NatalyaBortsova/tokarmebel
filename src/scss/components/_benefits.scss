@@ -1,0 +1,115 @@
+.benefits {
+  &__container {
+    padding: 58px 30px 50px 60px;
+
+    @include tablet {
+      padding: 37px 33px 42px 34px;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 33px;
+
+    @include big-desktop {
+      margin-bottom: calc(13px + (33 - 13) * ((100vw - 320px) / (1200 - 320)));
+    }
+
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    line-height: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__item {
+    grid-column: 3 span;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 82px;
+    min-width: 171px;
+
+    &::before {
+      @include pseudo;
+      @include bg-cover;
+
+      width: 62px;
+      height: 62px;
+      top: 0;
+      left: 0;
+
+      @include mobile {
+        width: 50px;
+        height: 50px;
+        left: 100px;
+      }
+    }
+
+    &--design {
+
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/design.svg');
+      }
+    }
+
+    &--model {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/model.svg');
+      }
+    }
+
+    &--quality {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/quality.svg');
+      }
+    }
+
+    &--key {
+      &::before {
+        @include pseudo;
+
+        background-image: url('../../img/key.svg');
+      }
+    }
+
+    @include tablet {
+      grid-column: 4 span;
+    }
+
+    @include mobile {
+      padding-top: 64px;
+      max-width: 260px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  &__text {
+    font-weight: 300;
+  }
+}

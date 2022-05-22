@@ -1,0 +1,10 @@
+import "./components/slider";
+import "./components/modal";
+import "./components/search";
+import "./components/video";
+import "./constants/catalog";
+import "./components/loadMore";
+import "./components/sort";
+import "./components/rangeSlider";
+import "./components/filters";
+import "./components/validation";
