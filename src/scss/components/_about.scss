@@ -32,7 +32,7 @@
     width: 64px;
     height: 64px;
 
-    background-image: url('../../img/play.svg');
+    background-image: url('../img/play.svg');
 
     &-text {
       position: absolute;
@@ -65,7 +65,7 @@
       height: 55px;
       top: 39px;
       left: 43px;
-      background-image: url('../../img/quote.svg');
+      background-image: url('../img/quote.svg');
 
       @include mobile {
         display: none;

@@ -5,7 +5,7 @@ const blockItems = document.querySelector(".product__list");
 const catalogList = [
   {
     id: "el1",
-    img: "../../img/dwelling/1.jpg",
+    img: "img/dwelling/1.jpg",
     name: "Вариант ST-65 «Bavaria»",
     footage1: "7,5х9 м",
     footage2: "135 м2",
@@ -16,7 +16,7 @@ const catalogList = [
   },
   {
     id: "el2",
-    img: "../../img/dwelling/2.jpg",
+    img: "img/dwelling/2.jpg",
     name: "Вариант ST-56 «Barcelona»",
     footage1: "7,5х9 м",
     footage2: "249 м2",
@@ -27,7 +27,7 @@ const catalogList = [
   },
   {
     id: "el3",
-    img: "../../img/dwelling/3.jpg",
+    img: "img/dwelling/3.jpg",
     name: "Вариант ST-25 «Garden ECO»",
     footage1: "7,5х9 м",
     footage2: "71 м2",

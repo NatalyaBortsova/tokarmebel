@@ -1,7 +1,7 @@
 const CATALOG = [
   {
     id: "el1",
-    img: "../../img/dwelling/1.jpg",
+    img: "img/dwelling/1.jpg",
     name: "Вариант ST-65 «Bavaria»",
     footage1: "7,5х9 м",
     footage2: "135 м2",
@@ -13,7 +13,7 @@ const CATALOG = [
 
   {
     id: "el2",
-    img: "../../img/dwelling/2.jpg",
+    img: "img/dwelling/2.jpg",
     name: "Вариант ST-56 «Barcelona»",
     footage1: "7,5х9 м",
     footage2: "249 м2",
@@ -24,7 +24,7 @@ const CATALOG = [
   },
   {
     id: "el3",
-    img: "../../img/dwelling/3.jpg",
+    img: "img/dwelling/3.jpg",
     name: "Вариант ST-25 «Garden ECO»",
     footage1: "7,5х9 м",
     footage2: "71 м2",
@@ -35,7 +35,7 @@ const CATALOG = [
   },
   {
     id: "el4",
-    img: "../../img/dwelling/4.jpg",
+    img: "img/dwelling/4.jpg",
     name: "Вариант ST-53 «Feeria»",
     footage1: "7,5х9 м",
     footage2: "53.6 м2",
@@ -46,7 +46,7 @@ const CATALOG = [
   },
   {
     id: "el5",
-    img: "../../img/dwelling/5.jpg",
+    img: "img/dwelling/5.jpg",
     name: "Вариант LX-75 JULIA",
     footage1: "7,5х9 м",
     footage2: "187 м2",
@@ -57,7 +57,7 @@ const CATALOG = [
   },
   {
     id: "el6",
-    img: "../../img/dwelling/6.jpg",
+    img: "img/dwelling/6.jpg",
     name: "Вариант ST-49v2 «Nevada»",
     footage1: "7,5х9 м",
     footage2: "146 м2",
@@ -68,7 +68,7 @@ const CATALOG = [
   },
   {
     id: "el7",
-    img: "../../img/dwelling/7.jpg",
+    img: "img/dwelling/7.jpg",
     name: "Вариант OS-77 «Milano»",
     footage1: "7,5х9 м",
     footage2: "192 м2",
@@ -79,7 +79,7 @@ const CATALOG = [
   },
   {
     id: "el8",
-    img: "../../img/dwelling/8.jpg",
+    img: "img/dwelling/8.jpg",
     name: "Вариант ST-22 «Classic»",
     footage1: "7,5х9 м",
     footage2: "131 м2",
@@ -90,7 +90,7 @@ const CATALOG = [
   },
   {
     id: "el9",
-    img: "../../img/dwelling/9.jpg",
+    img: "img/dwelling/9.jpg",
     name: "Вариант ST-65 «Elegant»",
     footage1: "7,5х9 м",
     footage2: "112 м2",
@@ -101,7 +101,7 @@ const CATALOG = [
   },
   {
     id: "el10",
-    img: "../../img/dwelling/10.jpg",
+    img: "img/dwelling/10.jpg",
     name: "Вариант ST-16 «Classic Plus»",
     footage1: "7,5х9 м",
     footage2: "110 м2",
@@ -112,7 +112,7 @@ const CATALOG = [
   },
   {
     id: "el11",
-    img: "../../img/dwelling/11.jpg",
+    img: "img/dwelling/11.jpg",
     name: "Вариант ST-23 «ECO Soul»",
     footage1: "7,5х9 м",
     footage2: "186 м2",
@@ -123,7 +123,7 @@ const CATALOG = [
   },
   {
     id: "el12",
-    img: "../../img/dwelling/12.jpg",
+    img: "img/dwelling/12.jpg",
     name: "Вариант ST-99 «Edinburgh»",
     footage1: "7,5х9 м",
     footage2: "250 м2",

@@ -64,7 +64,7 @@
       &::before {
         @include pseudo;
 
-        background-image: url('../../img/design.svg');
+        background-image: url('../img/design.svg');
       }
     }
 
@@ -72,7 +72,7 @@
       &::before {
         @include pseudo;
 
-        background-image: url('../../img/model.svg');
+        background-image: url('../img/model.svg');
       }
     }
 
@@ -80,7 +80,7 @@
       &::before {
         @include pseudo;
 
-        background-image: url('../../img/quality.svg');
+        background-image: url('../img/quality.svg');
       }
     }
 
@@ -88,7 +88,7 @@
       &::before {
         @include pseudo;
 
-        background-image: url('../../img/key.svg');
+        background-image: url('../img/key.svg');
       }
     }
 

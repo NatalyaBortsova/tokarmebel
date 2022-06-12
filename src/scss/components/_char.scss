@@ -133,13 +133,13 @@
 
       &--technology {
         &::before {
-          background-image: url('../../img/card/technology.svg');
+          background-image: url('../img/card/technology.svg');
         }
       }
 
       &--terms {
         &::before {
-          background-image: url('../../img/card/terms.svg');
+          background-image: url('../img/card/terms.svg');
         }
       }
 
@@ -182,7 +182,7 @@
         height: 10px;
         left: 0;
         top: 17px;
-        background-image: url(../../img/chevron-right.svg);
+        background-image: url('../img/chevron-right.svg');
       }
     }
   }

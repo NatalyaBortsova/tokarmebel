@@ -29,7 +29,7 @@
     right: 22px;
     width: 17px;
     height: 17px;
-    background-image: url('../../img/close.svg');
+    background-image: url('../img/close.svg');
     background-repeat: no-repeat;
     background-size: 17px 17px;
   }
@@ -64,7 +64,7 @@
       @include pseudo;
       @include bg-cover;
 
-      background-image: url('../../img/chevron.svg');
+      background-image: url('../img/chevron.svg');
       width: 10px;
       height: 10px;
       top: 20px;
@@ -107,7 +107,7 @@
       height: 10px;
       left: 0;
       top: 7px;
-      background-image: url('../../img/chevron-right.svg');
+      background-image: url('../img/chevron-right.svg');
     }
 
     &:not(:last-child) {
