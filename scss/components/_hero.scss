@@ -1,0 +1,120 @@
+.hero {
+  padding: 5px 0 74px;
+  background-color: var(--bg-accent);
+
+  @include tablet {
+    padding: 16px 0 74px;
+  }
+
+  @include mobile {
+    padding: 16px 0 59px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 6px;
+
+    @include small-tablet {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    padding-top: 120px;
+
+    @include tablet {
+      padding-top: 0;
+    }
+  }
+
+  &__text {
+    display: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 16px;
+
+    @include small-tablet {
+      display: block;
+      font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (768 - 320)));
+    }
+  }
+
+  &__title {
+    max-width: 551px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    line-height: 50px;
+
+    @include small-tablet {
+      max-width: none;
+      line-height: 30px;
+    }
+
+    @include mobile {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 502px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 26px;
+
+    @include small-tablet {
+      max-width: none;
+    }
+  }
+
+  &__image {
+    @include small-tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+      @include small-tablet {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    @include small-tablet {
+      justify-content: center;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__button {
+    display: block;
+    max-width: 280px;
+    margin-right: 44px;
+
+    @include big-desktop {
+      margin-right: calc(20px + (44 - 20) * ((100vw - 768px) / (1200 - 768)));
+    }
+
+    @include mobile {
+      margin: 0 auto;
+      margin-bottom: 19px;
+    }
+  }
+
+  &__link {
+    @include mobile {
+      display: inline-block;
+    }
+  }
+}

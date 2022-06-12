@@ -1,0 +1,48 @@
+.manufacture {
+  &__title {
+    margin-bottom: 37px;
+  }
+}
+
+.gallery {
+  padding-left: max(15px, calc((100% - var(--content-width)) / 2));
+
+  .swiper-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .swiper-slide {
+    width: 370px;
+    cursor: pointer;
+
+    @include small-tablet {
+      width: 220px;
+    }
+  }
+
+  &__image {
+    border-radius: 0px 40px;
+    max-height: 370px;
+
+    @include small-tablet {
+      border-radius: 0px 15px;
+    }
+  }
+
+  .swiper-scrollbar {
+    width: 300px;
+    height: 5px;
+    border-radius: 40px;
+    background-color: rgba(203, 135, 52, 0.2);
+    cursor: pointer;
+
+    @include mobile {
+      width: 250px;
+    }
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: var(--accent-color);
+
+  }
+}
